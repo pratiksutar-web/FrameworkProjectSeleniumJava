@@ -1,0 +1,5 @@
+# Created at 2023-07-10T21:54:11.857
+Boot Manifest-JAR contains absolute paths in classpath 'D:\QAFox Seleium Java\FrameworkProj\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
