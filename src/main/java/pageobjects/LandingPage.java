@@ -17,11 +17,11 @@ public class LandingPage {
 	}
 	
 	@FindBy(xpath="//span[text()='My Account']")
-	WebElement myAccountDropdown;
+	private WebElement myAccountDropdown;
 	
 	
 	@FindBy(linkText="Login")
-	WebElement LoginOption;
+	private WebElement LoginOption;
 	
 	
 	public WebElement myAccountDropdown() {

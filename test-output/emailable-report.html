@@ -9,10 +9,28 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">LoginTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">86,752</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TestTwo</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,873</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestFour</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,782</td><td></td><td></td></tr>
+<tr><td><a href="#t2">TestThree</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,701</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">LoginTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">23,933</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">56,289</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">runner.Runner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1689005649153</td><td rowspan="1">85885</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestTwo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.TestTwo</td><td><a href="#m0">twoTestMethod</a></td><td rowspan="1">1689051628226</td><td rowspan="1">9831</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestFour &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.TestFour</td><td><a href="#m1">testFour</a></td><td rowspan="1">1689051628226</td><td rowspan="1">9892</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">TestThree &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.TestThree</td><td><a href="#m2">testThree</a></td><td rowspan="1">1689051628226</td><td rowspan="1">11550</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">LoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.LoginTest</td><td><a href="#m3">login</a></td><td rowspan="2">1689051634515</td><td rowspan="2">1635</td></tr><tr class="passedeven"><td><a href="#m4">login</a></td></tr></tbody>
 </table>
-<h2>LoginTest</h2><h3 id="m0">runner.Runner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test login functionality with valid credentials&quot;</td><td>&quot;Login functionality of Tutorials Ninja&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestTwo</h2><h3 id="m0">tests.TestTwo#twoTestMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestFour</h2><h3 id="m1">tests.TestFour#testFour</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.TestFour.testFour(TestFour.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestThree</h2><h3 id="m2">tests.TestThree#testThree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LoginTest</h2><h3 id="m3">tests.LoginTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>pratikjsutar@gmail.com</td><td>pratik</td><td>Success</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>example@gmail.com</td><td>abc</td><td>Failure</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

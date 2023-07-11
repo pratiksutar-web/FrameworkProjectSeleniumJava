@@ -15,13 +15,13 @@ public class LoginPage {
 	}
 	
 	@FindBy(id="input-email")
-	WebElement emailField;
+	private WebElement emailField;
 	
 	@FindBy(id="input-password")
-	WebElement passwordField;
+	private WebElement passwordField;
 	
 	@FindBy(css="input[value='Login']")
-	WebElement LoginButton;
+	private WebElement LoginButton;
 	
 	
 	public WebElement emailField() {

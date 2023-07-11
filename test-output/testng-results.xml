@@ -1,47 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-10T21:44:08 IST" name="Suite" finished-at="2023-07-10T21:45:35 IST" duration-ms="86752">
+  <suite started-at="2023-07-11T10:30:28 IST" name="Suite" finished-at="2023-07-11T10:30:52 IST" duration-ms="23933">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@51bf5add]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-07-10T21:44:08 IST" name="LoginTest" finished-at="2023-07-10T21:45:35 IST" duration-ms="86752">
-      <class name="runner.Runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@51bf5add]" started-at="2023-07-10T21:44:08 IST" name="setUpClass" finished-at="2023-07-10T21:44:09 IST" duration-ms="794" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3b74ac8]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-07-11T10:30:28 IST" name="TestTwo" finished-at="2023-07-11T10:30:38 IST" duration-ms="9873">
+      <class name="tests.TestTwo">
+        <test-method signature="twoTestMethod()[pri:0, instance:tests.TestTwo@22875539]" started-at="2023-07-11T10:30:28 IST" name="twoTestMethod" finished-at="2023-07-11T10:30:38 IST" duration-ms="9831" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@51bf5add]" started-at="2023-07-10T21:44:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-10T21:45:35 IST" duration-ms="85885" status="PASS">
+        </test-method> <!-- twoTestMethod -->
+      </class> <!-- tests.TestTwo -->
+    </test> <!-- TestTwo -->
+    <test started-at="2023-07-11T10:30:28 IST" name="TestFour" finished-at="2023-07-11T10:30:38 IST" duration-ms="10782">
+      <class name="tests.TestFour">
+        <test-method signature="testFour()[pri:0, instance:tests.TestFour@1b7c473a]" started-at="2023-07-11T10:30:28 IST" name="testFour" finished-at="2023-07-11T10:30:38 IST" duration-ms="9892" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at tests.TestFour.testFour(TestFour.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFour -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:tests.TestFour@1b7c473a]" started-at="2023-07-11T10:30:38 IST" name="closeApplication" finished-at="2023-07-11T10:30:38 IST" duration-ms="544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- tests.TestFour -->
+    </test> <!-- TestFour -->
+    <test started-at="2023-07-11T10:30:28 IST" name="TestThree" finished-at="2023-07-11T10:30:39 IST" duration-ms="11701">
+      <class name="tests.TestThree">
+        <test-method signature="testThree()[pri:0, instance:tests.TestThree@324a0017]" started-at="2023-07-11T10:30:28 IST" name="testThree" finished-at="2023-07-11T10:30:39 IST" duration-ms="11550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThree -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:tests.TestThree@324a0017]" started-at="2023-07-11T10:30:39 IST" name="closeApplication" finished-at="2023-07-11T10:30:39 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- tests.TestThree -->
+    </test> <!-- TestThree -->
+    <test started-at="2023-07-11T10:30:28 IST" name="LoginTest" finished-at="2023-07-11T10:30:52 IST" duration-ms="23933">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:tests.LoginTest@5629510]" started-at="2023-07-11T10:30:28 IST" name="openApplication" finished-at="2023-07-11T10:30:34 IST" duration-ms="6288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@5629510]" started-at="2023-07-11T10:30:34 IST" name="login" data-provider="getLoginData" finished-at="2023-07-11T10:30:36 IST" duration-ms="1635" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Test login functionality with valid credentials"]]>
+                <![CDATA[pratikjsutar@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login functionality of Tutorials Ninja"]]>
+                <![CDATA[pratik]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Success]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@51bf5add]" started-at="2023-07-10T21:45:35 IST" name="tearDownClass" finished-at="2023-07-10T21:45:35 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.LoginTest@5629510]" started-at="2023-07-11T10:30:36 IST" name="closure" finished-at="2023-07-11T10:30:36 IST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.Runner -->
+        </test-method> <!-- closure -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:tests.LoginTest@5629510]" started-at="2023-07-11T10:30:36 IST" name="openApplication" finished-at="2023-07-11T10:30:40 IST" duration-ms="4394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@5629510]" started-at="2023-07-11T10:30:40 IST" name="login" data-provider="getLoginData" finished-at="2023-07-11T10:30:52 IST" duration-ms="11354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[example@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Failure]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.LoginTest@5629510]" started-at="2023-07-11T10:30:52 IST" name="closure" finished-at="2023-07-11T10:30:52 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+      </class> <!-- tests.LoginTest -->
     </test> <!-- LoginTest -->
   </suite> <!-- Suite -->
 </testng-results>
